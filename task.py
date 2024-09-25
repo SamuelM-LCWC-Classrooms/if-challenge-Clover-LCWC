@@ -10,6 +10,8 @@ def task_1(numbers, N):
 def task_2(N):
     msg = "The most "
 
+    if N % 1 == 0:
+        msg += "brilliant "
     if N % 2 == 0:
         msg += "exciting "
     if N % 3 == 0:
@@ -32,6 +34,7 @@ def task_2(N):
     msg = f"{msg.rstrip()} number is {N}!"
     
     return msg
+
 
 
 def task_3(calc):
