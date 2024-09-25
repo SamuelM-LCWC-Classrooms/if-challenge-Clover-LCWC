@@ -8,32 +8,34 @@ def task_1(numbers, N):
     return numbers
 
 def task_2(N):
-    msg = "The most "
+    msg = ["The most"]
 
     if N % 1 == 0:
-        msg += "brilliant "
+        msg.append("brilliant")
     if N % 2 == 0:
-        msg += "exciting "
+        msg.append("exciting")
     if N % 3 == 0:
-        msg += "fantastic "
+        msg.append("fantastic")
     if N % 4 == 0:
-        msg += "virtuous "
+        msg.append("virtuous")
     if N % 5 == 0:
-        msg += "heart-warming "
+        msg.append("heart-warming")
     if N % 6 == 0:
-        msg += "tear-jerking "
+        msg.append("tear-jerking")
     if N % 7 == 0:
-        msg += "beautiful "
+        msg.append("beautiful")
     if N % 8 == 0:
-        msg += "exhilarating "
+        msg.append("exhilarating")
     if N % 9 == 0:
-        msg += "emotional "
+        msg.append("emotional")
     if N % 10 == 0:
-        msg += "inspiring "
+        msg.append("inspiring")
 
-    msg = f"{msg.rstrip()} number is {N}!"
+    # Join the list into a single string with spaces
+    msg = " ".join(msg) + f" number is {N}!"
     
     return msg
+
 
 
 
