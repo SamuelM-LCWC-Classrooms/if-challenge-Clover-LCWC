@@ -11,28 +11,27 @@ def task_2(N):
     msg = "The most "
 
     if N % 1 == 0:
-        msg += "brilliant, "
+        msg += "brilliant "
     if N % 2 == 0:
-        msg += "exciting, "
+        msg += "exciting "
     if N % 3 == 0:
-        msg += "fantastic, "
+        msg += "fantastic "
     if N % 4 == 0:
-        msg += "virtuous, "
+        msg += "virtuous "
     if N % 5 == 0:
-        msg += "heart-warming, "
+        msg += "heart-warming "
     if N % 6 == 0:
-        msg += "tear-jerking, "
+        msg += "tear-jerking "
     if N % 7 == 0:
-        msg += "beautiful, "
+        msg += "beautiful "
     if N % 8 == 0:
-        msg += "exhilarating, "
+        msg += "exhilarating "
     if N % 9 == 0:
-        msg += "emotional, "
+        msg += "emotional "
     if N % 10 == 0:
-        msg += "inspiring, "
+        msg += "inspiring "
 
-    # Remove trailing comma and space, and add the ending
-    msg = msg.rstrip(", ") + f" number is {N}!"
+    msg = f"{msg.rstrip()} number is {N}!"
     
     return msg
 
@@ -51,3 +50,4 @@ def task_3(calc):
         return num1 // num2 if num2 != 0 else -1
     
     return None
+print(task_2(4))
